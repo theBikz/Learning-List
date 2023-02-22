@@ -18,6 +18,10 @@ const learningSchema = new mongoose.Schema({
         type: String,
         enum: ["In progress", "Not yet started", "Done"],
         default: "Not yet started",
+    },
+    userName: {
+        type: String,
+        required: true
     }
 })
 
