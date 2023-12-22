@@ -4,7 +4,7 @@
   "description": "Learning List",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": " node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bipin",
@@ -15,8 +15,8 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
-    "mongodb": "^5.0.1",
-    "mongoose": "^6.9.2"
+    "mongodb": "^5.9.2",
+    "mongoose": "^6.12.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

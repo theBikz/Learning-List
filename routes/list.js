@@ -100,4 +100,20 @@ router.post("/v1/login/", async (req, res) => {
   });
 });
 
+router.post("/v1/dummy/", async(req,res) => {
+try{
+  const dummyData = new authModel({
+    userName: req.body.userName,
+    password: req.body.password
+  });
+  console.log(dummyData)
+  const postDummyData = await dummyData.save();
+  console.log(postDummyData)
+  res.status(200).json({ postDummyData});
+}
+catch(e) {
+  res.send(e);
+}
+});
+
 module.exports = router;
